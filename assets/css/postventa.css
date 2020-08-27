@@ -1,0 +1,265 @@
+/* ESTILOS NAVBAR */
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Fuentes*/
+h1,
+h5 {
+    font-family: "Abril Fatface", cursive;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.navbar {
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-nav a:hover {
+    color: green;
+}
+
+.nombre {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: black;
+}
+
+.nombres {
+    float: right;
+    padding-top: 1em;
+    color: black;
+}
+
+.MiniNombre {
+    font-family: "Oswald", sans-serif;
+    color: black;
+}
+
+.navbar-nav {
+    text-decoration: none;
+    color: black;
+    font-family: "Bentham", serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding-right: 6em;
+}
+
+.navbar-nav,
+.nav-item {
+    color: black;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* animacions texto */
+.hvr-pop:hover,
+.hvr-pop:focus,
+.hvr-pop:active {
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.hvr-pop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+/* fin animaciones texto */
+/*FIN NAVBAR*/
+
+/*Header */
+
+#header__card--title {
+    font-family: 'Abril Fatface', cursive
+}
+
+#header__postventa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header__postventa--col {
+    display: flex;
+    justify-content: center;
+    height: 20em;
+}
+
+.header__postventa--fondo {
+
+    width: 100%;
+    height: 33em;
+    background-image: url('/assets/img/Casas/125m2/4.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: blur(3px);
+
+
+}
+
+/*header  cards */
+.header__postventa--cards {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.header__postventa--garantias,
+.header__postventa--procedimiento {
+    display: flex;
+    justify-content: center;
+}
+
+.header__iconos--icon {
+    width: 6em;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header__card--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Problemas-Soluciones*/
+#postventa__problemas--soluciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.postventa__card--header {
+    background-color: #005E2C;
+    height: 60px;
+
+}
+
+#accordion h1 {
+    font-family: "Abril Fatface", cursive;
+
+}
+
+.postventa__problemas--soluciones-titulo {
+    margin: 5% 0 3% 0;
+}
+
+
+#accordion {
+    width: 80%;
+
+}
+
+.quincho__card,
+.piscina__card,
+.cocina__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quincho__foto,
+.piscina__foto,
+.cocina__foto {
+    width: 20em;
+    height: 13em;
+    padding: 5%;
+    image-rendering: auto;
+
+}
+
+.MiniNombre {
+    font-family: "Oswald", sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+/*Media Queries*/
+@media (max-width: 600px) {
+    #header__card--titulo {
+        font-size: 1em;
+    }
+
+    #header__card--texto {
+        font-size: 0.7em;
+        font-weight: lighter;
+    }
+
+    #soluciones__titulo,
+    .manuales__titulo {
+        font-size: 1.5em
+    }
+
+    .quincho__card,
+    .piscina__card,
+    .cocina__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer__texto,
+    #footer__lista {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    #header__card--titulo {
+        font-size: 1.5em;
+    }
+
+    #header__card--texto {
+        font-size: 1em;
+    }
+
+    #soluciones__titulo,
+    .manuales__titulo {
+        font-size: 2.5em;
+    }
+
+    .quincho__card,
+    .piscina__card,
+    .cocina__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

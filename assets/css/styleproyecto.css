@@ -1,0 +1,358 @@
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTILOS NAVBAR */
+
+.navbar {
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-nav a:hover {
+  color: green;
+}
+
+.MiniNombre {
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.nombre {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: black;
+}
+
+.nombres {
+  float: right;
+  padding-top: 1em;
+  color: black;
+}
+
+.MiniNombre {
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+
+.navbar-nav {
+  text-decoration: none;
+  color: black;
+  font-family: "Bentham", serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  padding-right: 6em;
+}
+
+.navbar-nav,
+.nav-item {
+  color: black;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* animacions texto */
+.hvr-pop:hover,
+.hvr-pop:focus,
+.hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+/* fin animaciones texto */
+/*FIN NAVBAR*/
+section {
+  display: inline-block;
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+
+.galeria {
+  display: inline-block;
+}
+
+.galeria img {
+  width: 15rem;
+  height: 15rem;
+}
+
+.robmd {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.dire {
+  display: inline-block;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color: rgb(8, 4, 4);
+}
+
+.card-body {
+  height: 195px;
+}
+
+.card-img-top {
+  height: 185px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.custom {
+  margin-bottom: 33px
+}
+
+.boton {
+  width: 110px;
+}
+
+.formulario {
+  min-width: 315px;
+}
+
+.laluz {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  width: 50%;
+}
+
+.formulario__submit {
+  background: rgba(24, 128, 67, 0.7);
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  width: 70%;
+  margin-left: 12%;
+}
+
+
+#categorias img {
+  width: 80%;
+  margin: 10%;
+}
+
+#Crea img {
+  width: 50%;
+  height: 200px;
+  filter: blur(6px);
+  margin-bottom: 3rem;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.centrado {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  position: relative;
+  text-align: center;
+}
+
+#submit2 {
+  background: rgba(24, 128, 67, 0.7);
+  color: white;
+  align-items: center;
+  border-radius: 10%;
+  display: block;
+  width: 40%;
+}
+
+.carousel-item img {
+  max-height: 30rem;
+}
+
+.card a {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 2vh;
+  border-radius: 4em;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  margin-right: 3em;
+
+}
+
+
+/* efectos movimiento botones */
+.hvr-grow-rotate:hover,
+.hvr-grow-rotate:focus,
+.hvr-grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+}
+
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+#header__postventa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__postventa--fondo {
+  width: 100%;
+  height: 33em;
+  background-image: url('/assets/img/Casas/125m2/19.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: blur(5px);
+  z-index: 0;
+
+}
+
+#header__postventa h1 {
+  z-index: 1;
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 4.5em;
+  color: white;
+}
+
+/* efectos de css */
+.hvr-shrink:hover,
+.hvr-shrink:focus,
+.hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.linea {
+  border: 3px solid black;
+  margin-right: 30%;
+  margin-left: 30%;
+
+}
+
+.contenedor {
+  margin: 10%;
+  display: inline-block;
+}
+
+#card7 {
+  margin-left: 13%;
+}
+
+/*Footer*/
+#footer p {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+  #Crea h1 {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+
+  #Crea a {
+    max-width: 90%;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .contenedor {
+    margin: 7%;
+    display: block;
+  }
+}
+
+#Crea h1 {
+  text-shadow: 5px 5px 5px #000000;
+}
+
+@media screen and (max-width: 1214px) {
+
+  #card7 {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+  navbar-brand {
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+
+/* EFECTOS VARIOS  */
+.hvr-icon-down {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
